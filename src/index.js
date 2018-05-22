@@ -191,7 +191,7 @@ class MaskedInput extends React.Component {
 
     // Ignore modified key presses
     // Ignore enter key to allow form submission
-    if (e.metaKey || e.altKey || e.ctrlKey || e.key === 'Enter') { return }
+    if (e.metaKey || e.altKey || e.ctrlKey) { return }
 
     e.preventDefault()
     this._updateMaskSelection()
